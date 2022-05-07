@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variablr/custom properties</title>
+    <style>
+        :root{
+            /* --box-color:violet; */
+            --primary-color: rgb(0, 255, 242);
+            --danger-color:rgb(255, 238, 0);
+            --maxw:449px;
+
+        }
+        .box{
+            background-color: var(--primary-color);
+            /* width: 3px 5px; */
+            padding: 53px;
+            margin: 3px 4px;
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px var(--primary-color);
+        }
+        .container{
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>

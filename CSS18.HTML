@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRIG TEMPLATE</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+             'navbar navbar navbar navbar'
+             'section section section aside'
+             'footer footer footer footer';
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div id="navbar" class="box"> HOME ABOUT US GALLERY CONTACT US</div>
+         <div id="section" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis reprehenderit amet tenetur deserunt, consequatur possimus eaque corrupti nam dignissimos vitae voluptatem et explicabo inventore aspernatur reiciendis omnis fugiat tempore veritatis praesentium voluptates rem provident dolor veniam. Beatae, sapiente provident eos maxime sint porro libero ex distinctio sit quibusdam aut aliquam, dolores nemo similique iste recusandae natus temporibus. Quod dignissimos laboriosam sapiente error ipsum eius accusamus dolore quas fuga expedita veniam sequi mollitia iste vero nam nisi explicabo ullam ipsam ut, quis reiciendis quo. Magni explicabo est esse inventore voluptatem molestias ad eveniet illo cum, nobis, dicta earum eos laboriosam! Quos excepturi enim hic quia dolores, similique, debitis totam esse, error dolor sint facere. Velit molestiae temporibus quasi corporis ratione veritatis id assumenda quas tempore dignissimos dolorum necessitatibus ipsa maxime reprehenderit qui dolores incidunt est expedita cum, quisquam omnis. Maxime reiciendis aliquid est dolorum dicta vel quod quia velit magni excepturi dignissimos porro amet similique consequuntur repellat, perspiciatis, voluptatum quam id, soluta mollitia ex. Voluptas excepturi aliquam eligendi optio soluta voluptate tempore facere repellendus 
+         </div>
+         <div id="aside" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsum quia? Impedit reprehenderit error, alias nostrum consectetur voluptate labore sit excepturi inventore incidunt, totam architecto harum sequi voluptates praesentium quidem eos perferendis mollitia ipsam. Quaerat reprehenderit atque tempore fugiat! Itaque explicabo cum magni vero perspiciatis facilis deleniti, ipsam architecto alias libero pariatur maiores? Illum alias consequuntur laudantium consequatur, quisquam impedit. Necessitatibus, eum. Autem, sed? Voluptatibus voluptas vel in porro. Vero vitae nobis eos ex ad odit delectus illo odio. Numquam architecto harum error. Ex molestiae maxime, quidem nostrum eligendi officiis autem, tempore unde dolorem vero nesciunt! Illo molestias libero illum eos rem accusamus recusandae eveniet minus quae. Consectetur praesentium, voluptatibus earum distinctio impedit accusantium vitae vero, ipsa reiciendis velit omnis deleniti nesciunt corrupti debitis tempore facilis officiis blanditiis non enim harum, minima nam labore optio! Et numquam corrupti earum impedit debitis placeat maxime beatae illum ab, voluptatibus velit similique, in totam recusandae rerum ducimus nihil nisi magnam enim autem accusantium ad molestias? </div>
+         <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam in nihil, minus deserunt ab nemo sequi inventore animi vitae corporis nostrum iure! Non distinctio, illum quis ad veritatis excepturi?</footer>
+         <!-- <div class="box">item-1</div>
+         <div class="box">item-2</div>
+         <div class="box">item-3</div>
+         <div class="box">item-4</div>
+         <div class="box">item-5</div>
+         <div class="box">item-6</div>
+         <div class="box">item-7</div>
+         <div class="box">item-8</div>
+         <div class="box">item-9</div> -->
+     </div>
+    
+</body>
+</html>

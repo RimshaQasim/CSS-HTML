@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            background-color: cadetblue;
+            border: 2px solid red;
+            padding: 23px 24px;
+            margin: 23px 13px;
+            /* 3 one is blur radius and 4th one spred radius */
+            /* box shadow : offset-x, ofset-y color */
+            /* box shadow : offset-x, ofset-y, blur radius ,color */
+            /* box shadow : offset-x, ofset-y, blur radius, spreding radius, color */
+            /* box-shadow: 4px 6px 3px 5px saddlebrown; */
+            /* - is reverse the peocess */
+            box-shadow: 4px 6px 3px 5px rgba(2, 3, 5, 0.5);
+            /* box-shadow: -4px -5px bluevilet; */
+            /* insert the shadow inside the box */
+            box-shadow: inset 3px 5px green;
+            /* give more than one shadow */
+            box-shadow: 2px 4px green ,4px 6px blue;
+        }
+        .card h2{
+            /* text-shadow: 2px 4px white; */
+            text-shadow: 2px 4px  3px white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus excepturi provident laborum obcaecati nobis cupiditate, nam porro expedita magnam, ad praesentium, illum dolore. Repellendus repudiandae facilis modi neque doloremque porro impedit expedita nesciunt.</p></div>
+        <div class="card" id="car-2"><h2>card2</h2><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate molestiae optio mollitia, qui asperiores veniam sed quos dolore. Tenetur accusamus recusandae cum provident sequi asperiores mollitia sunt eum rerum?
+        </p>
+        </div>
+        <div class="card" id="car-3"><h2>card 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium, voluptate cum placeat aperiam magni velit itaque cupiditate sequi, consectetur porro earum animi illum tempore aut quo, debitis quia suscipit.
+        </p></div>
+    </div>
+    
+</body>
+</html>
